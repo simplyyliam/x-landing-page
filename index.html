@@ -1,13 +1,663 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>twitter-landing-page</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <title>X Clone</title>
+</head>
+<body>
+    <div class="container">
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar">
+            <div class="logo">
+                <svg viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </div>
+
+            <nav style="flex: 1;">
+                <a href__="#" class="nav-item active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a href__="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <span>Explore</span>
+                </a>
+                <a href__="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                        <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                    </svg>
+                    <span>Notifications</span>
+                </a>
+                <a href__="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <line x1="19" y1="8" x2="19" y2="14"></line>
+                        <line x1="22" y1="11" x2="16" y2="11"></line>
+                    </svg>
+                    <span>Follow</span>
+                </a>
+                <a href__="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>Chat</span>
+                </a>
+                <a href__="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v20m10-10H2"></path>
+                    </svg>
+                    <span>Grok</span>
+                </a>
+                <a href__="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                    </svg>
+                    <span>Lists</span>
+                </a>
+                <a href__="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>Bookmarks</span>
+                </a>
+                <a href__="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>Communities</span>
+                </a>
+                <a href__="#" class="nav-item">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    <span>Premium</span>
+                </a>
+                <a href__="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+                <a href__="#" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="19" cy="12" r="1"></circle>
+                        <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                    <span>More</span>
+                </a>
+            </nav>
+
+            <button class="post-btn">Post</button>
+
+            <div class="user-profile">
+                <div class="avatar">S</div>
+                <div class="user-info">
+                    <div class="username">simplytiam</div>
+                    <div class="handle">@simplytiam.Ov</div>
+                </div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#71767b" stroke-width="2" width="20" height="20">
+                    <circle cx="12" cy="12" r="1"></circle>
+                    <circle cx="19" cy="12" r="1"></circle>
+                    <circle cx="5" cy="12" r="1"></circle>
+                </svg>
+            </div>
+        </aside>
+
+        <!-- MAIN FEED -->
+        <main class="main-feed">
+            <div class="feed-header">
+                <div class="tabs">
+                    <button class="tab active">For you</button>
+                    <button class="tab">Following</button>
+                </div>
+            </div>
+
+            <!-- COMPOSE TWEET -->
+            <div class="compose-tweet">
+                <div class="compose-content">
+                    <div class="avatar">S</div>
+                    <div class="compose-input">
+                        <textarea class="compose-textarea" placeholder="What's happening?" rows="1"></textarea>
+                        
+                        <div class="compose-actions">
+                            <div class="action-icons">
+                                <button class="icon-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                </button>
+                                <button class="icon-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                                        <line x1="7" y1="2" x2="7" y2="22"></line>
+                                        <line x1="17" y1="2" x2="17" y2="22"></line>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <line x1="2" y1="7" x2="7" y2="7"></line>
+                                        <line x1="2" y1="17" x2="7" y2="17"></line>
+                                        <line x1="17" y1="17" x2="22" y2="17"></line>
+                                        <line x1="17" y1="7" x2="22" y2="7"></line>
+                                    </svg>
+                                </button>
+                                <button class="icon-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                                    </svg>
+                                </button>
+                                <button class="icon-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                                    </svg>
+                                </button>
+                                <button class="icon-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="post-btn-small">Post</button>
+                        </div>
+                        
+                        <div class="reply-settings">
+                            <a href__="#" class="reply-link">🌐 Anyone can reply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TWEET 1 -->
+            <article class="tweet">
+                <div class="tweet-content-wrapper">
+                    <div class="tweet-avatar">J</div>
+                    <div class="tweet-main">
+                        <div class="tweet-header">
+                            <div class="tweet-author">
+                                <span class="author-name">Jason Ziasi</span>
+                                <svg viewBox="0 0 24 24" class="verified-badge">
+                                    <path fill="currentColor" d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path>
+                                </svg>
+                                <span class="tweet-time">@ziosijason1001</span>
+                                <span class="tweet-time">·</span>
+                                <span class="tweet-time">Jan 8</span>
+                            </div>
+                            <button class="more-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="19" cy="12" r="1"></circle>
+                                    <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="category-text">Introducing <span class="tweet-link">@FigmaDesignCo</span> Design Prompt Library</div>
+
+                        <div class="tweet-text">100 tokens output. All top design stuff, because of copy crag, card luck of context, bad service
+
+Because design is cool premium and not affordable for word and most people don't know how to prompt it
+
+That's why we built the tool agent</div>
+                        
+                        <button class="show-more">Show more</button>
+
+                        <div class="tweet-media">
+                            <div class="media-video">
+                                <div class="media-content">
+                                    <button class="watch-again-btn">Watch again</button>
+                                    <div class="media-title">Prompt Library</div>
+                                </div>
+                                <div class="video-duration">0:21</div>
+                            </div>
+                        </div>
+
+                        <div class="tweet-actions">
+                            <button class="action-btn">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </div>
+                                <span class="action-count">50</span>
+                            </button>
+                            <button class="action-btn retweet">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M17 1l4 4-4 4"></path>
+                                        <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                                        <path d="M7 23l-4-4 4-4"></path>
+                                        <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+                                    </svg>
+                                </div>
+                                <span class="action-count">2K</span>
+                            </button>
+                            <button class="action-btn like">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
+                                <span class="action-count">15K</span>
+                            </button>
+                            <button class="action-btn">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                                    </svg>
+                                </div>
+                                <span class="action-count">101K</span>
+                            </button>
+                            <div class="bookmark-share">
+                                <button class="action-btn">
+                                    <div class="action-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="action-btn">
+                                    <div class="action-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                            <polyline points="16 6 12 2 8 6"></polyline>
+                                            <line x1="12" y1="2" x2="12" y2="15"></line>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TWEET 2 -->
+            <article class="tweet">
+                <div class="tweet-content-wrapper">
+                    <div class="tweet-avatar">K</div>
+                    <div class="tweet-main">
+                        <div class="tweet-header">
+                            <div class="tweet-author">
+                                <span class="author-name">Kevin Grazela</span>
+                                <svg viewBox="0 0 24 24" class="verified-badge">
+                                    <path fill="currentColor" d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path>
+                                </svg>
+                                <span class="tweet-time">@k_grazela</span>
+                                <span class="tweet-time">·</span>
+                                <span class="tweet-time">Jun 9</span>
+                            </div>
+                            <button class="more-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="19" cy="12" r="1"></circle>
+                                    <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="tweet-text">speckling U</div>
+
+                        <div class="tweet-media">
+                            <div class="code-media">
+                                <div class="code-header">
+                                    <span class="code-theme">light</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#71767b" stroke-width="2" width="16" height="16">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="code-content">
+                                    <div class="code-filename">Read dropdown-menu.tsx  257 lines</div>
+                                    <div class="code-status">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                        </svg>
+                                        <span>Reading file</span>
+                                    </div>
+                                </div>
+                                <div class="code-footer">
+                                    <span class="code-time">0:21</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tweet-actions">
+                            <button class="action-btn">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                            <button class="action-btn retweet">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M17 1l4 4-4 4"></path>
+                                        <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                                        <path d="M7 23l-4-4 4-4"></path>
+                                        <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+                                    </svg>
+                                </div>
+                                <span class="action-count">440</span>
+                            </button>
+                            <button class="action-btn like">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
+                                <span class="action-count">4.4K</span>
+                            </button>
+                            <button class="action-btn">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="bookmark-share">
+                                <button class="action-btn">
+                                    <div class="action-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="action-btn">
+                                    <div class="action-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                            <polyline points="16 6 12 2 8 6"></polyline>
+                                            <line x1="12" y1="2" x2="12" y2="15"></line>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TWEET 3 -->
+            <article class="tweet">
+                <div class="tweet-content-wrapper">
+                    <div class="tweet-avatar" style="background: linear-gradient(135deg, #f97316, #dc2626);">B</div>
+                    <div class="tweet-main">
+                        <div class="tweet-header">
+                            <div class="tweet-author">
+                                <span class="author-name">Bjorn</span>
+                                <svg viewBox="0 0 24 24" class="verified-badge">
+                                    <path fill="currentColor" d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path>
+                                </svg>
+                                <span class="tweet-time">@verybigbirdy</span>
+                                <span class="tweet-time">·</span>
+                                <span class="tweet-time">5h</span>
+                            </div>
+                            <button class="more-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="19" cy="12" r="1"></circle>
+                                    <circle cx="5" cy="12" r="1"></circle>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="tweet-text">The Guj library is always the easiest way to start with YouTube Shorts in 2025...</div>
+
+                        <div class="tweet-media">
+                            <div class="media-video">
+                                <div class="media-content">
+                                    <button class="watch-again-btn">Watch video</button>
+                                </div>
+                                <div class="video-duration">0:42</div>
+                            </div>
+                        </div>
+
+                        <div class="tweet-actions">
+                            <button class="action-btn">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                            <button class="action-btn retweet">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M17 1l4 4-4 4"></path>
+                                        <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                                        <path d="M7 23l-4-4 4-4"></path>
+                                        <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                            <button class="action-btn like">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                            <button class="action-btn">
+                                <div class="action-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="bookmark-share">
+                                <button class="action-btn">
+                                    <div class="action-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="action-btn">
+                                    <div class="action-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                            <polyline points="16 6 12 2 8 6"></polyline>
+                                            <line x1="12" y1="2" x2="12" y2="15"></line>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-sidebar">
+            <div class="search-box">
+                <div class="search-wrapper">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="Search">
+                </div>
+            </div>
+
+            <!-- Subscribe to Premium -->
+            <div class="widget">
+                <div class="widget-header">
+                    <h2 class="widget-title">Subscribe to Premium</h2>
+                </div>
+                <div class="premium-content">
+                    <p class="premium-text">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Today's News -->
+            <div class="widget">
+                <div class="widget-header">
+                    <h2 class="widget-title">Today's News</h2>
+                    <button class="close-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-category">
+                        <div class="news-icons">
+                            <div class="news-icon red"></div>
+                            <div class="news-icon blue"></div>
+                        </div>
+                        <span class="category-text">Sports · Trending</span>
+                    </div>
+                    <p class="news-title">Saina's Brace Salvages Draw for Fletcher's United in Clasico</p>
+                    <p class="news-source">T nya.com · 5 posts · 100.7K views</p>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-category">
+                        <span class="category-text">KwaZulu-Natal Police</span>
+                    </div>
+                    <p class="news-title">Suspects in Isando Shootout</p>
+                    <p class="news-source">@TimesLive · News · 743 posts</p>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-category">
+                        <span class="category-text">Politics · Trending</span>
+                    </div>
+                    <p class="news-title">Trump Orders U.S. Withdrawal from 68 International Organizations</p>
+                    <p class="news-source">17.7K views</p>
+                </div>
+            </div>
+
+            <!-- What's happening -->
+            <div class="widget">
+                <div class="widget-header">
+                    <h2 class="widget-title">What's happening</h2>
+                </div>
+                
+                <div class="trending-item">
+                    <p class="category-text">Music · Trending</p>
+                    <p class="news-title">Bonang</p>
+                </div>
+
+                <div class="trending-item">
+                    <p class="category-text">Trending</p>
+                    <p class="news-title">Zoleka</p>
+                </div>
+
+                <div class="trending-item">
+                    <p class="category-text">Music · Trending</p>
+                    <p class="news-title">Mthuli</p>
+                    <p class="news-source">875 posts</p>
+                </div>
+
+                <div class="trending-item">
+                    <p class="category-text">Music · Trending</p>
+                    <p class="news-title">#ArimbaAtkensi</p>
+                    <p class="news-source">2,002 posts</p>
+                </div>
+
+                <button class="show-more-btn">Show more</button>
+            </div>
+
+            <!-- Who to follow -->
+            <div class="widget">
+                <div class="widget-header">
+                    <h2 class="widget-title">Who to follow</h2>
+                </div>
+                
+                <div class="user-suggestion">
+                    <div class="user-details">
+                        <div class="suggestion-avatar">J</div>
+                        <div>
+                            <div class="user-name-section">
+                                <span class="author-name">Jozef Rogita</span>
+                            </div>
+                            <span class="handle">@joey.logics</span>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <div class="user-suggestion">
+                    <div class="user-details">
+                        <div class="suggestion-avatar" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);">G</div>
+                        <div>
+                            <div class="user-name-section">
+                                <span class="author-name">Gaateng Weather</span>
+                            </div>
+                            <span class="handle">@GateEngDv</span>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <div class="user-suggestion">
+                    <div class="user-details">
+                        <div class="suggestion-avatar" style="background: linear-gradient(135deg, #8b5cf6, #6366f1);">R</div>
+                        <div>
+                            <div class="user-name-section">
+                                <span class="author-name">Ranil Chrono</span>
+                                <svg viewBox="0 0 24 24" class="verified-badge">
+                                    <path fill="currentColor" d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path>
+                                </svg>
+                            </div>
+                            <span class="handle">@ranilchrono</span>
+                        </div>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <button class="show-more-btn">Show more</button>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer-links">
+                <a href__="#">Terms of Service</a>
+                <a href__="#">Privacy Policy</a>
+                <a href__="#">Cookie Policy</a>
+                <a href__="#">Accessibility</a>
+                <a href__="#">Ads Info</a>
+                <a href__="#">More ···</a>
+                <span>© 2025 X Corp.</span>
+            </div>
+        </aside>
+    </div>
+</body>
 </html>
